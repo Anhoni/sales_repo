@@ -1,0 +1,14 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="sales_repo.controller.index" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="OTIf sales data">
+		<content>
+		<Button
+		id="helloButton"
+		type="Emphasized"
+		text="press Here"
+		icon="sap-icon://sap-ui5"
+		press="onPress"
+		class="sapUiSmallMargin"/>
+		</content>
+	</Page>
+</core:View>
