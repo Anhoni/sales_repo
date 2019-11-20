@@ -1,0 +1,24 @@
+{
+"Sheet1": [
+		 	{
+		 		"Material": "5001080",
+		 		"Plant"   : "1502",
+		 		"Des"     : "this is the material"
+		 	},
+		 	{
+		 		"Material": "5001081",
+		 		"Plant"   : "1502",
+		 		"Des"     : "this is the material2"
+		 	},
+		 	{
+		 		"Material": "5001082",
+		 		"Plant"   : "1502",
+		 		"Des"     : "this is the material3"
+		 	},
+		 	{
+		 		"Material": "5001083",
+		 		"Plant"   : "1502",
+		 		"Des"     : "this is the material4"
+		 	}
+ 		  ]
+} 	

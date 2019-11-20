@@ -17,14 +17,42 @@ sap.ui.define([
 			UIComponent.prototype.init.apply(this, arguments);
 
 			// set data model
-			var oData = {
+			/*var oData = {
 				recipient : {
 					name : "World"
 				}
-			};
-			var oModel = new JSONModel(oData);
+			};*/
+			var oModel = new sap.ui.model.json.JSONModel();
+			$.ajax({
+			type: "GET",
+			contentType: "application/json",
+			url: "data/sales_data.json",
+			dataType: "json",
+			async: false,
+			success: function(data, textStatus, jqXHR) {
+				//var oData = data;
+				oModel = new JSONModel(data);
+				console.log("success");
+			  }});	
+			//var oModel = new JSONModel(oData);
 			this.setModel(oModel);
 			console.log(this);
+			
+			/*var oModel = new sap.ui.model.json.JSONModel();
+			var that = this;
+			var aData = jQuery.ajax({
+			type: "GET",
+			contentType: "application/json",
+			url: "data/sales_data.json",
+			dataType: "json",
+			async: false,
+			success: function(data, textStatus, jqXHR) {
+			oModel.setData(data);
+			alert("success to post");
+			}
+			});
+			this.setModel(oModel);*/
+					
 		}
 	});
 

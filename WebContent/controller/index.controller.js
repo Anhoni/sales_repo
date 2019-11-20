@@ -11,6 +11,8 @@ sap.ui.define([
 
 		onPress : function () {
 			// read msg from i18n model
+			console.log(this.getView().getModel());
+
 			var oBundle = this.getView().getModel("i18n").getResourceBundle();
 			var sRecipient = this.getView().getModel().getProperty("/recipient/name");
 			var sMsg = oBundle.getText("helloMsg", [sRecipient]);
