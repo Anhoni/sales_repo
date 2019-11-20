@@ -5,8 +5,8 @@
 	"id": "sales_repo",
 	"type": "application",
 	"i18n": "i18n/i18n.properties",
-	"title": "sales otif data",
-	"description": "shows otif of sales order",
+	"title": "{{appTitle}}",
+	"description": "{{appDescription}}",
 	"applicationVersion": {
 	  "version": "1.0.0"
 	},
@@ -21,16 +21,18 @@
 	  "phone": true
 	},
 	"supportedThemes": [
-	  "sap_bluecrystal"
+	  "sap_belize"
 	]
   },
   "sap.ui5": {
 	"_version": "1.1.0",
 	"rootView": "sales_repo.view.index",
+	"type": "XML",
 	"dependencies": {
 	  "minUI5Version": "1.30",
 	  "libs": {
-		"sap.m": {}
+		"sap.m": {},
+		"sap.ui.commons": {}
 	  }
 	},
 	"models": {

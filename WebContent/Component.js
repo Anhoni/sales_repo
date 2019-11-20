@@ -4,10 +4,11 @@ sap.ui.define([
 ], function (UIComponent, JSONModel) {
 	"use strict";
 
-	return UIComponent.extend("sales_repo.component", {
+	return UIComponent.extend("sales_repo.Component", {
 
 		metadata : {
-			manifest: "json"
+			manifest: "json",
+			
 		},
 
 		init : function () {
@@ -23,6 +24,7 @@ sap.ui.define([
 			};
 			var oModel = new JSONModel(oData);
 			this.setModel(oModel);
+			console.log(this);
 		}
 	});
 

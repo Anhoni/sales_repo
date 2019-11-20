@@ -1,0 +1,1 @@
+first html -> component -> metadata json -> root view load -> init of controller - > init of component
