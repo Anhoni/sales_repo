@@ -37,7 +37,9 @@ sap.ui.define([
 			//var oModel = new JSONModel(oData);
 			this.setModel(oModel);
 			console.log(this);
-			
+			var table1 = sap.ui.getCore().byId("__xmlview0--Table1");
+			table1.setModel(oModel);
+			console.log(table1);
 			/*var oModel = new sap.ui.model.json.JSONModel();
 			var that = this;
 			var aData = jQuery.ajax({

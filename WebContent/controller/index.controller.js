@@ -7,6 +7,7 @@ sap.ui.define([
 	return Controller.extend("sales_repo.controller.index", {
 		onInit : function (){
 			console.log("i'm here atleast");
+			
 		},
 
 		onPress : function () {
