@@ -20,6 +20,8 @@ sap.ui.define([
 
 			// show message
 			MessageToast.show(sMsg);
+			  var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			  oRouter.navTo("second");
 		}
 	});
 
