@@ -8,8 +8,8 @@
 	"title": "{{appTitle}}",
 	"description": "{{appDescription}}",
 	"applicationVersion": {
-	  "version": "1.0.0"
-	},
+	  	"version": "1.0.0"
+		},
 	"ach": "CA-UI5-DOC"
   },
   "sap.ui": {
@@ -25,55 +25,48 @@
 	]
   },
   "sap.ui5": {
-	"_version": "1.1.0",
-	"rootView": "sales_repo.view.index",
-	"type": "XML",
-	"dependencies": {
-	  "minUI5Version": "1.30",
-	  "libs": {
-		"sap.m": {},
-		"sap.ui.commons": {}
-	  }
-	},
+		"_version": "1.1.0",
+		"rootView": "sales_repo.view.index",
+		"type": "XML",
+		"dependencies": {
+			  	"minUI5Version": "1.30",
+				"libs": {
+					"sap.m": {},
+					"sap.ui.commons": {},
+					"sap.ui.core": {}
+			  		}
+				},
 	"models": {
-	  "i18n": {
-		"type": "sap.ui.model.resource.ResourceModel",
-		"settings": {
-		  "bundleName": "sales_repo.i18n.i18n"
-		}
-	  }
-	},
+		  "i18n": {
+			"type": "sap.ui.model.resource.ResourceModel",
+			"settings": {
+			  "bundleName": "sales_repo.i18n.i18n"
+				}
+	  		}
+		},
 	
 	"routing": {
-   	 "config": {
-  		"routerClass": "sap.m.routing.Router",
-  		"viewType": "XML",
-  		"viewPath": "sales_repo.view",
-  		"controlId": "app",
-  		"transition": "slide",
-  		"controlAggregation": "pages"
-   	},
-   	"routes": [
-			  	{
-			   		"pattern": "",
-			   		"name": "master",
-			   		"target": "master"
-			  	},
-			  	{
-			   		"pattern": "second",
-			   		"name": "second",
-			   		"target": "second"
-			  	}
-   			],
-   	"targets": {
-     "master": {
-   		"viewName": "index"
-  			},
-  	 "second": {
-   		"viewName": "sub"
-  			}
-    	}
-  }
-	
-  }
+	   	 "config": {
+	  		"routerClass": "sap.m.routing.Router",
+	  		"viewType": "XML",
+	  		"viewPath": "sales_repo.view",
+	  		"controlId": "app",
+	  		"transition": "slide",
+	  		"controlAggregation": "pages"
+	   				},
+	   	"routes": [
+				  	{
+				   		"pattern": "",
+				   		"name": "master",
+				   		"view": "index"
+				  	},
+				  	{
+				   		"pattern": "second",
+				   		"name": "second",
+				   		"view": "sub"
+				  	}
+	   			]
+  		}
+  		}
+  		
 }

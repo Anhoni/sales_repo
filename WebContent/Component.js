@@ -15,13 +15,12 @@ sap.ui.define([
 
 			// call the init function of the parent
 			UIComponent.prototype.init.apply(this, arguments);
-
-			// set data model
-			/*var oData = {
-				recipient : {
-					name : "World"
-				}
-			};*/
+			//this.setModel(models.createDeviceMode1(),"device");
+			console.log(this);
+			//var router = UIComponent.getRouterFor(this);
+			this.getRouter().initialize();
+			
+			//set data model from saledata jsonfile			
 			var oModel = new sap.ui.model.json.JSONModel();
 			$.ajax({
 			type: "GET",
