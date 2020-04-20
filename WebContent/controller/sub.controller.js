@@ -9,7 +9,9 @@ sap.ui.define([
 		onInit : function (){
 			console.log("i'm here atleast on second");
 		},
-
+		onBeforeRendering: function () {console.log("why am i not asleep");
+		},
+		
 		onPress2 : function () {
 			// show message
 			MessageToast.show("hello person fro second view");
